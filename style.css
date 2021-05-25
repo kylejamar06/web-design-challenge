@@ -1,37 +1,167 @@
-h1 {color:teal ;
-    font-size: 100px;
+/* Body */
+body.background    {
+    background-color: #ece9e9; 
+}
+
+h2  {
+    color: #0BADA6;
+    font-weight: bolder;
+    
+}
+
+li,p,a.figure-link   {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* bootstrap navbar edits */
+
+.active, .dropdown-menu .dropdown-item:active a:hover{
+    background-color:#E7E7E7; 
+}
+.dropdown-item{
+    color: #6D8092 ; 
+}
+/* navbar limitations when it window decreases in size*/
+.navbar {
+    max-height: 55px;
+}
+
+/* dropdown edits changing background color and messing with links */
+.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover{
+    background-color:#E7E7E7 ; 
+}
+a{
+    color: #6D8092;
+    font-size: 15px; 
+}
+.nav-link:hover{
+    background-color:#E7E7E7;
+   }
+
+.navbar-brand:hover{
+color: rgb(175, 175, 175);
+}
+
+
+/* main title Class  */
+.main-title{
+    color: #0BADA6;  
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder; 
+    padding-top: 25px; 
+}
+
+/* img on the home page*/
+img.home-img    {
+    margin: auto;
+    width: 45%;
+    float:left;
+}
+/* img on plot page*/
+img.plot-img    {
+    margin:auto;
+    width: 90%;
+    display:block;
+}
+
+/* img on the home page in visualization box*/
+img.home-vis-img    {
+    margin: auto;
+    width: 110%;
+    float:left;
+    padding: 10px;
+    
+}
+/* img hover settings*/
+img.home-vis-img:hover   {
+    background-color: #0BADA6;
+    width: 110%;
+    opacity: 0.5;
+     
+}
+
+
+/* Latitude title on top left of page */
+#latitude   {
+    color: white; 
+    margin-left: 30px; 
+    padding: 5px; 
+    font-size: 22px;
+    font-weight: bold; 
+    background-color: #0BADA6;
+    font-family: Georgia,
+}
+
+/* p tags on the comparison page */
+p.title {
+    text-align: center;
+    color: #0BADA6;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+/* images on comparison page */
+img.comparisons   {
+    margin: auto;
+    display:block;
+    width: 85%;
+    padding: 10px;
+}
+
+/* img hover settings*/
+img.comparisons:hover   {
+    background-color: #0BADA6;
+    width: 85%;
+    opacity: 0.5;
+     
+}
+
+/* Solid border/section */
+hr.solid {
+    border-top: 1px solid #bbb;
+  }
+
+/* Box Class homepage */
+.box {
+    margin-top: 60px; 
+    margin-bottom: 62px; 
+    padding: 10px 20px 15px; 
+    color:black;
+    background-color: white; 
+
+  }
+
+/* Box Class homepage */
+.data   {
+    font-size: 15px;
+    border-top-color:white;
+    overflow-y: auto;
+    overflow-x: auto;
+    max-width: auto;
+
+}
+
+  /* Media Queries */
+@media(max-width: 1000px){
+    #custom-nav.bg-light  {
+    background-color: #0BADA6 !important;
+    }
+    .navbar{
+        max-height: none; 
+        padding: inherit;
+        background-color: #0BADA6;
+    }
+    .navbar div{
+        margin: inherit;   
+    }
+    .navbar-brand{
+        padding: 10px; 
+    }
+    
+    button{
+        margin-right: 30px; 
     }
 
-.box-set {
-    height: 400px;
-    background: white;
-    position: relative;
-}
-
-.box {
-    position: absolute;
-    height: 150px;
-    width: 150px;
-    background: green;
-    border: 2px solid black;
-}
-
-.box-1 {
-    top: 20px;
-    left: 20px;
-}
-
-.box-2 {
-    bottom: 20px;
-    left: 20px;
-}
-
-.box-3 {
-    top: 20px;
-    right: 20px;
-}
-
-.box-4 {
-    bottom: 20px;
-    right: 20px;
 }
